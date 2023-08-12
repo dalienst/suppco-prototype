@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SUPPCO Prototype</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-measuring-tab" data-bs-toggle="tab" data-bs-target="#nav-measuring" type="button"
+                    role="tab" aria-controls="nav-measuring" aria-selected="true">Measuring Equipment</button>
+                <button class="nav-link" id="nav-safety-tab" data-bs-toggle="tab" data-bs-target="#nav-safety" type="button"
+                    role="tab" aria-controls="nav-safety" aria-selected="false">Safety Equipment</button>
+                <button class="nav-link" id="nav-working-tab" data-bs-toggle="tab" data-bs-target="#nav-working" type="button"
+                    role="tab" aria-controls="nav-working" aria-selected="false">Working Equipment</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-measuring" role="tabpanel" aria-labelledby="nav-measuring-tab" tabindex="0">
+                <div class="container mt-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Measuring Equipment
+                        </div>
+
+                        <!-- Main dropdown items -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseConcrete"
+                                role="button" aria-expanded="false">
+                                Distance Measurement
+                            </a>
+
+                            <!-- First dropdown items -->
+                            <div class="collapse" id="collapseConcrete">
+                                <ul class="list-group list-group-flush">
+
+                                    <!-- dropdown item 1 with other dropdowns -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#tapeMeasures" role="button" aria-expanded="false">Tape Measures</a>
+                                        <div class="collapse" id="tapeMeasures">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Steel Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Fibreglass Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Pocket Tape measure</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <!-- dropdown item 2 with other dropdowns -->
+                                    <li class="list-group-item list-group-item-action">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#laserDistanceMeters" role="button" aria-expanded="false">Laser Distance Meters</a>
+                                        <div class="collapse" id="laserDistanceMeters">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Steel Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Fibreglass Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Pocket Tape measure</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <!-- dropdown item 3 with other dropdowns -->
+                                    <li class="list-group-item list-group-item-action">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#measuringWheels" role="button" aria-expanded="false">Measuring Wheels</a>
+                                        <div class="collapse" id="measuringWheels">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Steel Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Fibreglass Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Pocket Tape measure</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <!-- dropdown item 4 with other dropdowns -->
+                                    <li class="list-group-item list-group-item-action">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#totalStations" role="button" aria-expanded="false">Total Stations</a>
+                                        <div class="collapse" id="totalStations">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Steel Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Fibreglass Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Pocket Tape measure</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseConcrete2" role="button"
+                                aria-expanded="false">
+                                Distance Equipment
+                            </a>
+                            <div class="collapse" id="collapseConcrete2">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Speed</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-safety" role="tabpanel" aria-labelledby="nav-safety-tab" tabindex="0">Safety Equipment</div>
+
+            <div class="tab-pane fade" id="nav-working" role="tabpanel" aria-labelledby="nav-working-tab" tabindex="0">Working Equipment</div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
