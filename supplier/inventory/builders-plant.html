@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SUPPCO Prototype</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="d-flex align-items-start mt-4">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-crane-tab" data-bs-toggle="pill" data-bs-target="#v-pills-crane"
+                        type="button" role="tab" aria-controls="v-pills-crane" aria-selected="true">Crane</button>
+                    <button class="nav-link" id="v-pills-excavate-tab" data-bs-toggle="pill" data-bs-target="#v-pills-excavate"
+                        type="button" role="tab" aria-controls="v-pills-excavate" aria-selected="false">Excavator</button>
+                    <button class="nav-link" id="v-pills-bull-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bull"
+                        type="button" role="tab" aria-controls="v-pills-bull" aria-selected="false">Bulldozer</button>
+                    <button class="nav-link" id="v-pills-forks-tab" data-bs-toggle="pill" data-bs-target="#v-pills-forks"
+                        type="button" role="tab" aria-controls="v-pills-forks" aria-selected="false">Forklifts</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-crane" role="tabpanel" aria-labelledby="v-pills-crane-tab" tabindex="0">
+                        <div class="container-fluid">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title m-0">Cranes</h5>
+                                <span><a class="btn btn-success" href="#"><i class="bi bi-plus-lg"></i></a></span>
+                            </div>
+                            <table class="table table-bordered table-responsive mt-4">
+                                <thead>
+                                    <tr class="table-primary">
+                                        <th>Manufacturer</th>
+                                        <th>Model</th>
+                                        <th>Year</th>
+                                        <th>Weight Capacity</th>
+                                        <th>Lifting Height</th>
+                                        <th>Horsepower</th>
+                                        <th>Boom Length</th>
+                                        <th>Operator Info</th>
+                                        <th>Type of lease</th>
+                                        <th>Rate per hour</th>
+                                        <th>Quantity</th>
+                                        <th>Delivery</th>
+                                        <th>Delivery Timeline</th>
+                                        <th>Payment</th>
+                                        <th>Payment Methods</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Mahindra
+                                        </td>
+                                        <td>Crane1840</td>
+                                        <td>2020</td>
+                                        <td>320</td>
+                                        <td>480</td>
+                                        <td>400</td>
+                                        <td>20</td>
+                                        <td>Egan</td>
+                                        <td>Wet</td>
+                                        <td>20000</td>
+                                        <td>10</td>
+                                        <td>Available</td>
+                                        <td>2-3 Days</td>
+                                        <td>Fixed</td>
+                                        <td>Mobile Transfer, Bank Transfer</td>
+                                        <td>Available</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-excavate" role="tabpanel" aria-labelledby="v-pills-excavate-tab"
+                        tabindex="0">Excavators</div>
+                    <div class="tab-pane fade" id="v-pills-bull" role="tabpanel" aria-labelledby="v-pills-bull-tab"
+                        tabindex="0">Bulldozers</div>
+                    <div class="tab-pane fade" id="v-pills-forks" role="tabpanel" aria-labelledby="v-pills-forks-tab"
+                        tabindex="0">Forklifts</div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>

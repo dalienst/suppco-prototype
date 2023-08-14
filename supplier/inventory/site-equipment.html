@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SUPPCO Prototype</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-measuring-tab" data-bs-toggle="tab" data-bs-target="#nav-measuring" type="button"
+                    role="tab" aria-controls="nav-measuring" aria-selected="true">Measuring Equipment</button>
+                <button class="nav-link" id="nav-safety-tab" data-bs-toggle="tab" data-bs-target="#nav-safety" type="button"
+                    role="tab" aria-controls="nav-safety" aria-selected="false">Safety Equipment</button>
+                <button class="nav-link" id="nav-working-tab" data-bs-toggle="tab" data-bs-target="#nav-working" type="button"
+                    role="tab" aria-controls="nav-working" aria-selected="false">Working Equipment</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-measuring" role="tabpanel" aria-labelledby="nav-measuring-tab" tabindex="0">
+                <div class="container mt-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>
+                                Measuring Equipment
+                            </h4>
+                        </div>
+
+                        <!-- Main dropdown items -->
+
+                        <!-- Dropdown 1 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseDistance"
+                                role="button" aria-expanded="false">
+                                Distance Measurement
+                            </a>
+
+                            <!-- First dropdown items -->
+                            <div class="collapse" id="collapseDistance">
+                                <ul class="list-group list-group-flush">
+
+                                    <!-- dropdown item 1 with other dropdowns -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#tapeMeasures" role="button" aria-expanded="false">Tape Measures</a>
+                                        <div class="collapse" id="tapeMeasures">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Steel Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Fibreglass Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Pocket Tape measure</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <!-- dropdown item 2 with other dropdowns -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#laserDistanceMeters" role="button" aria-expanded="false">Laser Distance Meters</a>
+                                        <div class="collapse" id="laserDistanceMeters">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Steel Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Fibreglass Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Pocket Tape measure</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <!-- dropdown item 3 with other dropdowns -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#measuringWheels" role="button" aria-expanded="false">Measuring Wheels</a>
+                                        <div class="collapse" id="measuringWheels">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Steel Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Fibreglass Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Pocket Tape measure</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <!-- dropdown item 4 with other dropdowns -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#totalStations" role="button" aria-expanded="false">Total Stations</a>
+                                        <div class="collapse" id="totalStations">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Steel Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Fibreglass Tape measure</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Pocket Tape measure</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 2 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item" data-bs-toggle="collapse" href="#collapseLevelling" role="button"
+                                aria-expanded="false">
+                                Levelling
+                            </a>
+                            <div class="collapse" id="collapseLevelling">
+                                <ul class="list-group list-group-flush">
+                                    <!-- mini-dropdown 1 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#spirit" role="button" aria-expanded="false">Spirit Levels</a>
+                                        <div class="collapse" id="spirit">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Bubble Level
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Torpedo Level
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Box Level
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <!-- mini-dropdown 2 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#laser" role="button" aria-expanded="false">Laser Levels</a>
+                                        <div class="collapse" id="laser">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Rotary Laser level
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Line laser level
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Dot laser level
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <!-- mini-dropdown 3 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#water" role="button" aria-expanded="false">
+                                            Water Levels
+                                        </a>
+                                        <div class="collapse" id="water">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Transparent tube level
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Hose level
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Pressure gauge level
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <!-- mini-dropdown 4 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#digital" role="button" aria-expanded="false">
+                                            Digital Levels
+                                        </a>
+                                        <div class="collapse" id="digital">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Digital angle finder
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Digital inclinometer
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Digital level box
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    
+
+                                    <!-- mini-dropdown 5 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#tripods" role="button" aria-expanded="false">
+                                            Automatic Levels
+                                        </a>
+                                        <div class="collapse" id="automatic">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Optical level
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Auto level
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Dumpy Level
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 3 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item" data-bs-toggle="collapse" href="#collapseSurveying" role="button" aria-expanded="false">
+                                Surveying
+                            </a>
+                            <div class="collapse" id="collapseSurveying">
+                                <ul class="list-group list-group-flush">
+                                    <!-- mini-dropdown 1 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#theodolites" role="button"
+                                            aria-expanded="false">Theodolites</a>
+                                        <div class="collapse" id="theodolites">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Digital theodolite
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Transit theodolite
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Vernier theodolite
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                        
+                                    <!-- mini-dropdown 2 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#gps" role="button"
+                                            aria-expanded="false">GPS Receivers</a>
+                                        <div class="collapse" id="gps">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        GPS Receiver
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Survey-grade GPS receiver
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        GNSS Receiver
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                        
+                                    <!-- mini-dropdown 3 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#surveyPrism" role="button" aria-expanded="false">
+                                            Survey Prism
+                                        </a>
+                                        <div class="collapse" id="surveyPrism">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Mini Prism
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Corner prism
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Pole prism
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                        
+                                    <!-- mini-dropdown 4 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#staff" role="button" aria-expanded="false">
+                                            Staffs/Rods
+                                        </a>
+                                        <div class="collapse" id="staff">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Prism Pole
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Leveling Rode
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                       Range Pole
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                        
+                        
+                                    <!-- mini-dropdown 5 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#tripods" role="button"
+                                            aria-expanded="false">
+                                            Tripods
+                                        </a>
+                                        <div class="collapse" id="tripods">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Wooden Tripod
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Aluminium Tripod
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Heavy-duty tripod
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                        
+                                </ul>
+                            </div>
+                        </div>
+                        
+
+                        <!-- Dropdown 4 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseMaterias" role="button"
+                                aria-expanded="false">
+                                Materias Testing
+                            </a>
+                            <div class="collapse" id="collapseMaterias">
+                                <ul class="list-group list-group-flush">
+                                    <!-- mini-dropdown 1 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#moisture" role="button"
+                                            aria-expanded="false">Moisture Meters</a>
+                                        <div class="collapse" id="moisture">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Pin-type moisture meter
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Pinless moisture meter
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Digital moisture meter
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                            
+                                    <!-- mini-dropdown 2 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#concreteTesting" role="button" aria-expanded="false">
+                                            Concrete Testing Equipment
+                                        </a>
+                                        <div class="collapse" id="concreteTesting">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Compression Testing machine
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Concrete test hammer
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Concrete air meter
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                            
+                                    <!-- mini-dropdown 3 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#soilTesting" role="button" aria-expanded="false">
+                                            Soil Testing Equipment
+                                        </a>
+                                        <div class="collapse" id="soilTesting">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Soil Penetrometer
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Soil Compaction Test apparatus
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Soil PH Meter
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                            
+                                    <!-- mini-dropdown 4 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#ndte" role="button" aria-expanded="false">
+                                            Non-Destructive Testing Equipment
+                                        </a>
+                                        <div class="collapse" id="ndte">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Ultrasonic thickness gauge
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Eddy current tester
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        X-ray machine
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                            
+                            
+                                    <!-- mini-dropdown 5 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#metalDetectors" role="button" aria-expanded="false">
+                                            Metal Detectors
+                                        </a>
+                                        <div class="collapse" id="metalDetectors">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Handheld metal detector
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Ground penetrating radar
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Magnetic locator
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                            
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 5 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseEnvMon" role="button"
+                                aria-expanded="false">
+                                Environmental Monitoring
+                            </a>
+                            <div class="collapse" id="collapseEnvMon">
+                                <ul class="list-group list-group-flush">
+                                    <!-- mini-dropdown 1 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#airquality" role="button"
+                                            aria-expanded="false">Air Quality Meters</a>
+                                        <div class="collapse" id="airquality">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Particulate matter meter
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Volatile organic compound meter
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Carbon monoxide meter
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                            
+                                    <!-- mini-dropdown 2 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#soundLevel" role="button"
+                                            aria-expanded="false">
+                                            Sound level meters
+                                        </a>
+                                        <div class="collapse" id="soundLevel">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Class 1 sound level meter
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Class 2 sound level meter
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Integrating sound level meter
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                            
+                                    <!-- mini-dropdown 3 -->
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#lightMeters" role="button" aria-expanded="false">
+                                            Light Meters
+                                        </a>
+                                        <div class="collapse" id="lightMeters">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Lux Meter
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Foot-candle meter
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="" class="dropdown-item">
+                                                        Luminance meter
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-safety" role="tabpanel" aria-labelledby="nav-safety-tab" tabindex="0">
+                <div class="container mt-4">
+                    <!-- <a href="/index.html" class="mt-2">Home</a> -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>
+                                Safety Equipment
+                            </h4>
+                        </div>
+
+                        <!-- Main Dropdowns -->
+
+                        <!-- Dropdown 1 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseFPS" role="button"
+                                aria-expanded="false">
+                                Fall Protection Safety
+                            </a>
+                            <div class="collapse" id="collapseFPS">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Harnesses</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Lanyards</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Anchor points</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety nets</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Guardrails</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 2 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseLadders" role="button"
+                                aria-expanded="false">
+                                Scaffolding and Ladders
+                            </a>
+                            <div class="collapse" id="collapseLadders">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Scaffolding</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Ladders</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Platforms</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Guardrails</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Toeboards</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 3 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseBarricades" role="button"
+                                aria-expanded="false">
+                                Barricades and Signage
+                            </a>
+                            <div class="collapse" id="collapseBarricades">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Warning Tapes</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Cones</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Barriers</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Barricades</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Fences</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Signs</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Labels</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Tags</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 4 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseStem" role="button"
+                                aria-expanded="false">
+                                Safety Training and Education Materials
+                            </a>
+                            <div class="collapse" id="collapseStem">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety Manuals</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety Handbooks</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Training Videos</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety Posters</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety Presentations</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety Quizzes</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 5 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseCamera" role="button"
+                                aria-expanded="false">
+                                Safety Cameras and Monitoring Systems
+                            </a>
+                            <div class="collapse" id="collapseCamera">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Security Cameras</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Motion Detectors</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety Alarms</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety Interlocks</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety Gates</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety Lockout/tagout systems</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 6 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseFirstAid" role="button"
+                                aria-expanded="false">
+                                First Aid Kits & Fire Extinguishers
+                            </a>
+                            <div class="collapse" id="collapseFirstAid">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">First Aid kits</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Fire Extinguishers</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Burn Kits</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Eye wash stations</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Emergency showers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 7 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapsePPE" role="button"
+                                aria-expanded="false">
+                                Personal Protective Equipment (PPE)
+                            </a>
+                            <div class="collapse" id="collapsePPE">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Hard hats</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety glasses</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Gloves</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">High-visibility vests</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Safety footwear</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Hearing Protection</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Respiratory protection</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Fall Protection Equipment</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Sun protection</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Face shields</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 8 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseResp" role="button"
+                                aria-expanded="false">
+                                Respirators & Dust Masks
+                            </a>
+                            <div class="collapse" id="collapseResp">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Respirators</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Dust Masks</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Filters</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Cartridges</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Powered air purifying respirators</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" href="#">Supplied air respirators</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 9 -->
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-working" role="tabpanel" aria-labelledby="nav-working-tab" tabindex="0">
+                <div class="container mt-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Working Equipment</h4>
+                        </div>
+
+                        <!-- Dropdown item 1 -->
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#collapseConcrete" role="button"
+                                aria-expanded="false">
+                                Concrete Equipment
+                            </a>
+
+                            <div class="collapse" id="collapseConcrete">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#concreteMixer" role="button" aria-expanded="false">
+                                            Concrete Mixers
+                                        </a>
+                                        <div class="collapse" id="concreteMixer">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Stationery concrete mixers</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Portable concrete mixers</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Transit Mixers</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a class="dropdown-item" data-bs-toggle="collapse" href="#concretePumps" role="button" aria-expanded="false">
+                                            Concrete Pumps
+                                        </a>
+                                        <div class="collapse" id="concretePumps">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Trailer-mounted concrete pumps</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Truck-mounted concrete pumps</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="dropdown-item">Line pumps</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- dropdown 2 -->
+                        <div class="list-group list-group-flush"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
